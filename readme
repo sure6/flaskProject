@@ -1,0 +1,9 @@
+frontend
+    bootstrap
+    jquery+ajax
+
+backend
+    flask(python web framework)
+    pytesseract(OCR engine)
+
+

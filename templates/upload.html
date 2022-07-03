@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>show image</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container"
+     style="background-image: url('data:image/jpeg;base64,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')">
+    {#  header  #}
+    <div class="row">
+        <div class="col"><br></div>
+    </div>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-6 text-center"><h1>Uploading image Sample</h1></div>
+        <div class="col"></div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <hr>
+        </div>
+    </div>
+
+    {# uploading image components #}
+    <form enctype="multipart/form-data" id="uploadForm">
+        <input type="file" name="myfile" id="picpath" style="display:none">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-6 text-center">
+                <input type="text" value="" disabled="disabled" readonly="readonly"
+                       id="inputFileAgent" width="100%"/>
+                <input type="button" value="Browse" id="btn" class="btn btn-sm btn-primary"/>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col"><br></div>
+        </div>
+        <div class="row text-center">
+            <div class="col-5"></div>
+            <div class="col-2"><input type="button" value="start" id="submit" class="btn btn-success"></div>
+            <div class="col-5"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <hr>
+            </div>
+        </div>
+    </form>
+
+    {#   display pic and  result #}
+    <div class="row">
+        <div class="col-5 text-center">
+            <span class="badge bg-warning bg-gradient text-wrap fs-4">
+                preview picture
+            </span></div>
+        <div class="col-2"></div>
+        <div class="col-5 text-center">
+            <span class="badge bg-danger bg-gradient text-wrap fs-4">
+                preview result
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5 text-center" style=" height:300px; border: 1px solid black; border-radius: 5px">
+            <img id="pic" width="400">
+        </div>
+        <div class="col-2"></div>
+        <div class="col-5 text-center"
+             style=" height:300px; border: 1px solid black; border-radius: 5px; overflow-y: scroll">
+            <span id="result"></span>
+        </div>
+    </div>
+
+    {#  footer #}
+    <div class="row" style="height: 150px;">
+        <div class="col"></div>
+        <div class="col text-center align-self-center"><b>Copyright © 2021 Summer school at JI by group 5</b></div>
+        <div class="col"></div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $("#btn").click(function () {
+            $("#picpath").click(); //after hide input:file，you can click btn to choose image
+            $("#picpath").on("change", function () {
+                document.getElementById("inputFileAgent").value = document.getElementById("picpath").value;
+                var objUrl = getObjectURL(this.files[0]); //gets the path of the image, which is not the local path of the image
+                if (objUrl) {
+                    $("#pic").attr("src", objUrl); // display image
+                }
+            });
+        });
+
+        $('#submit').click(function () {
+            var fileObj = document.getElementById("picpath").files[0]; // js get file obj
+            if (typeof (fileObj) == "undefined" || fileObj.size <= 0) {
+                alert("please choose images");
+                return;
+            }
+            var formFile = new FormData($('#uploadForm')[0])
+            $.ajax({
+                type: "POST",
+                url: '/api/upload',
+                data: formFile,
+                cache: false,//no cache for uploading
+                processData: false,//to serialize the data parameter it must be false
+                contentType: false, //must
+                success: function (data) {
+                    console.log(data.errmsg);
+                    document.getElementById("result").innerHTML = data.text;
+                },
+                error: function (e) {
+                    console.log(e.errmsg);
+                    alert(e.errmsg)
+                }
+            })
+        })
+    });
+
+    //  build a file's url that can store
+    function getObjectURL(file) {
+        var url = null;
+        if (window.createObjectURL != undefined) { // basic
+            url = window.createObjectURL(file);
+        } else if (window.URL != undefined) { // mozilla(firefox)
+            url = window.URL.createObjectURL(file);
+        } else if (window.webkitURL != undefined) { // webkit or chrome
+            url = window.webkitURL.createObjectURL(file);
+        }
+        return url;
+    }
+</script>
+</body>
+</html>
